@@ -1,0 +1,274 @@
+body{
+	background: lightgreen;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 5% auto;
+	height: 40px;
+}
+/*旋转立体*/
+.wrap {
+	display: inline-flex;
+	perspective: 600px;
+	perspective-origin: 50% 100px;
+	width: 8%;
+	height: 100px;
+	margin-top: -25px;
+}
+.cube {
+	position: relative;
+	width: 100px;
+	transform-style: preserve-3d;
+}
+.cube div {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	box-shadow: inset 0 0 50px;
+	font-size: 80%;
+	background: green;
+	color:white;
+}
+
+.back {
+	transform: translateZ(-50px) rotateY(180deg);
+}
+
+.right {
+	transform: rotateY(-270deg) translateX(50px);
+	transform-origin: top right;
+
+}
+.left {
+	transform: rotateY(270deg) translateX(-50px);
+	transform-origin: center left;
+}
+.top {
+	transform: rotateX(-90deg) translateY(-50px);
+	transform-origin: top center;
+}
+.bottom {
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: bottom center;
+}
+.front {
+	transform: translateZ(50px);
+}
+.logoinfo{
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+}
+.logoinfo1{
+	width: 100%;
+	height: 100%;
+	margin-top: -10px;
+}
+/*旋转立体动画*/
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
+}
+
+.cube {
+	animation: spin 5s infinite linear;
+}
+.wrap:hover .cube{
+	animation-play-state: paused;
+}
+/*旋转菜单*/
+#block{
+	display: inline-flex;
+	width: 70%;
+	height: 100px;
+	margin-left: 10%
+}
+#menu{
+	display: flex;
+	width: 800px;
+	height: 100px;
+}
+#menu li{
+	display: block;
+	width: 45%;
+	justify-content: space-between;
+	padding: 5px;
+}
+#menu li a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 15px;
+	padding: 20px 15px;
+}
+.three-d {
+	perspective: 200px;
+	transition: all .07s;
+	position: relative;
+	cursor: pointer;
+}
+	.three-d:hover .three-d-box{
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.frente {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.atras {
+	transform: rotatex(-90deg) translatez(25px);
+}
+
+.frente, .atras {
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 200%;
+	position: absolute;
+	background: lightgreen;
+	top: 0;
+	left: 0;
+	padding: 20px 15px;
+	color: black;
+	box-sizing: border-box;
+}
+#login{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -50px;
+}
+#login ul{
+	width: 150px;
+}
+#login li{
+	display: inline;
+	list-style: none;
+	text-decoration: none;
+}
+#login li a {
+	text-decoration: underline;
+	color:black;
+	padding: 5px;
+}
+#login li a:hover{
+	color:white;
+	
+}
+section{
+	margin-top: 200px;
+	margin: 5% auto;
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	height: 400px;
+}
+section div{
+	margin-top: 100px;
+}
+footer{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: -50px;
+	font-size: 10px;
+}
+@media (max-width: 800px){
+	header{
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+		margin: 5% auto;
+		height: 20px;
+	}
+	.wrap{
+		margin-top: 20px;
+	}
+	.cube{
+		width: 50px;
+	}
+	.cube div {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		line-height: 25px;
+		box-shadow: inset 0 0 30px;
+		font-size: 1px;
+		word-break: break-all;
+		background: green;
+		color:white;
+	}
+	.back {
+	transform: translateZ(-25px) rotateY(180deg);
+	}
+
+	.right {
+		transform: rotateY(-270deg) translateX(25px);
+		transform-origin: top right;
+	}
+	.left {
+		transform: rotateY(270deg) translateX(-25px);
+		transform-origin: center left;
+	}
+	.top {
+		transform: rotateX(-90deg) translateY(-25px);
+		transform-origin: top center;
+	}
+	.bottom {
+		transform: rotateX(90deg) translateY(25px);
+		transform-origin: bottom center;
+	}
+	.front {
+		transform: translateZ(25px);
+	}
+	#menu{
+		margin-top: -10px;
+		margin-left: -70px;
+	}
+	#menu li {
+		margin: 20px;
+	}
+	.frente,.atras{
+		font-size: 5px;
+		width: 10px;
+		height: 10px;
+		padding: 10px 5px;
+	}
+	#login{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -25px;
+	}
+	#login{
+		margin-left: -10px;
+	}
+	#login ul{
+		width: 60px;
+	}
+	#login ul li a{
+		font-size: 10px;
+	}
+	section div{
+		margin-top: 200px;
+	}
+	section div img{
+		width: 300px;
+		height: 100px;
+	}

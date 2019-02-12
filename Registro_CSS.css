@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing:border-box;
+}
+
+body {
+	background: lightblue;
+	margin:0;
+	min-height:100vh;
+}
+
+.formulario-registro {
+	margin: 5% auto;
+	margin-top: 100px;
+	width: 98%;
+	max-width: 500px;
+	background: lightgreen;
+	border-radius: 7px;
+}
+
+.titulo {
+	background-size: deepskyblue;
+	color:#fff;
+	padding: 20px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 30px;
+	border-radius: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom:5px solid crimson;
+}
+
+.contenedor {
+	padding: 10px 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+input {
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+.input-48 {
+	width: 48%;
+}
+
+.input-100 {
+	width: 100%;
+}
+
+.enviar {
+	background: crimson;
+	color: #fff;
+	margin-top:10px ;
+	padding: 10px 40px;
+	text-decoration: none;
+}
+
+.link {
+	width: 100%;
+	margin: 7px;
+	text-align: center;
+	font-size: 14px;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+@media (max-width: 800px){
+	.tienes{
+		margin-left: 200px;
+		margin-top: -70px;
+		font-size: 10px;
+	}
+	.formulario-registro {
+		margin: 5% auto;
+		margin-top: 50px;
+		width: 80%;
+		max-width: 500px;
+		background: lightgreen;
+		border-radius: 7px;
+	}
+	input{
+		font-size: 10px;
+	}
+	.link{
+		font-size: 10px;
+	}
+	.enviar{
+		font-size: 10px;
+	}
+	footer{
+		margin-top: 10px;
+	}
+}

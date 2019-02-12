@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Producto Infolutions</title>
+	<link rel="stylesheet" type="text/css" href="Producto.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript">
+		window.onload=function(){
+			boton0();
+			boton1();
+			boton2();
+			boton3();
+		}
+	function boton0()
+	{
+  		var obt=document.getElementById("bt");
+  		var odiv=document.getElementById("thediv");
+  		obt.onclick=function(){
+    		if(odiv.style.display=="none"){
+      		odiv.style.display="block";
+      		obt.value="Oculta la informacion";
+      		var obt1=document.getElementById("bt1");
+      		obt1.style.display="none";
+      		var obt2=document.getElementById("bt2");
+      		obt2.style.display="none";
+      		var obt3=document.getElementById("bt3");
+      		obt3.style.display="none";
+    		}
+    		else{
+      		odiv.style.display="none";
+      		obt.value="Click para más informacion";
+      		var obt1=document.getElementById("bt1");
+      		obt1.style.display="block";
+      		var obt2=document.getElementById("bt2");
+      		obt2.style.display="block";
+      		var obt3=document.getElementById("bt3");
+      		obt3.style.display="block";
+    		}
+  		}	
+  	}
+
+  	function boton1()
+	{
+  		var obt1=document.getElementById("bt1");
+  		var odiv1=document.getElementById("thediv1");
+  		obt1.onclick=function(){
+    		if(odiv1.style.display=="none"){
+      		odiv1.style.display="block";
+      		obt1.value="Oculta la informacion";
+      		var obt=document.getElementById("bt");
+      		obt.style.display="none";
+      		var obt2=document.getElementById("bt2");
+      		obt2.style.display="none";
+      		var obt3=document.getElementById("bt3");
+      		obt3.style.display="none";
+    		}
+    		else{
+      		odiv1.style.display="none";
+      		obt1.value="Click para más informacion";
+      		var obt=document.getElementById("bt");
+      		obt.style.display="block";
+      		var obt2=document.getElementById("bt2");
+      		obt2.style.display="block";
+      		var obt3=document.getElementById("bt3");
+      		obt3.style.display="block";
+    		}
+  		}	
+  	}
+  	function boton2()
+  	{
+  		var obt2=document.getElementById("bt2");
+  		var odiv2=document.getElementById("thediv2");
+  		obt2.onclick=function(){
+    		if(odiv2.style.display=="none"){
+      		odiv2.style.display="block";
+      		obt2.value="Oculta la informacion";
+      		var obt=document.getElementById("bt");
+      		obt.style.display="none";
+      		var obt1=document.getElementById("bt1");
+      		obt1.style.display="none";
+      		var obt3=document.getElementById("bt3");
+      		obt3.style.display="none";
+    		}
+    		else{
+      		odiv2.style.display="none";
+      		obt2.value="Click para más informacion";
+      		var obt=document.getElementById("bt");
+      		obt.style.display="block";
+      		var obt1=document.getElementById("bt1");
+      		obt1.style.display="block";
+      		var obt3=document.getElementById("bt3");
+      		obt3.style.display="block";
+    		}
+  		}	
+  	}
+  	function boton3()
+  	{
+  		var obt3=document.getElementById("bt3");
+  		var odiv3=document.getElementById("thediv3");
+  		obt3.onclick=function(){
+    		if(odiv3.style.display=="none"){
+      		odiv3.style.display="block";
+      		obt3.value="Oculta la informacion";
+      		var obt=document.getElementById("bt");
+      		obt.style.display="none";
+      		var obt1=document.getElementById("bt1");
+      		obt1.style.display="none";
+      		var obt2=document.getElementById("bt2");
+      		obt2.style.display="none";
+    		}
+    		else{
+      		odiv3.style.display="none";
+      		obt3.value="Click para más informacion";
+      		var obt=document.getElementById("bt");
+      		obt.style.display="block";
+      		var obt1=document.getElementById("bt1");
+      		obt1.style.display="block";
+      		var obt2=document.getElementById("bt2");
+      		obt2.style.display="block";
+    		}
+  		}	
+  	}
+		
+/*
+	window.onload=function(){
+  		var obt=document.getElementById("bt");
+  		var odiv=document.getElementById("thediv");
+  		obt.onclick=function(){
+    		if(odiv.style.display=="none"){
+      		odiv.style.display="block";
+      		obt.value="Oculta la informacion";
+    		}
+    		else{
+      		odiv.style.display="none";
+      		obt.value="Click para más informacion";
+    		}
+  		}	
+	}
+	window.onload=function(){
+  		var obt1=document.getElementById("bt1");
+  		var odiv1=document.getElementById("thediv1");
+  		obt1.onclick=function(){
+  			alert("hola");
+    		if(odiv1.style.display=="none"){
+      		odiv1.style.display="block";
+      		obt1.value="Oculta la informacion";
+    		}
+    		else{
+      		odiv1.style.display="none";
+      		obt1.value="Click para más informacion";
+    		}
+  		}	
+	}
+	window.onload=function(){
+  		var obt2=document.getElementById("bt2");
+  		var odiv2=document.getElementById("thediv2");
+  		obt2.onclick=function(){
+    		if(odiv2.style.display=="none"){
+      		odiv2.style.display="block";
+      		obt2.value="Oculta la informacion";
+    		}
+    		else{
+      		odiv2.style.display="none";
+      		obt2.value="Click para más informacion";
+    		}
+  		}	
+	}
+	window.onload=function(){
+  		var obt3=document.getElementById("bt3");
+  		var odiv3=document.getElementById("thediv3");
+  		obt3.onclick=function(){
+    		if(odiv3.style.display=="none"){
+      		odiv3.style.display="block";
+      		obt3.value="Oculta la informacion";
+    		}
+    		else{
+      		odiv3.style.display="none";
+      		obt3.value="Click para más informacion";
+    		}
+  		}	
+	}
+	*/
+	</script>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<div class="cube">
+				<div class="front"><p title="JUEGO1"><a href="juego.html"><img class="logoinfo1" src="mando-dibujo-png.png"></a></p></div>
+				<div class="back"><p title="JUEGO2"><a href="juego2.html"><img class="logoinfo1" src="mando-dibujo-png.png"></a></p></div>
+				<div class="top">INFOLUTIONS</div>
+				<div class="bottom">INFOLUTIONS</div>
+				<div class="left"><img class="logoinfo" src="INFOLUTIONS_LOGO.PNG"></div>
+				<div class="right"><img class="logoinfo" src="INFOLUTIONS_LOGO.PNG"></div>
+			</div>
+		</div>
+		<nav id="block">
+			<ul id="menu">
+				<li><a href="somos.html" class="three-d">
+					<span class="three-d-box">
+						<span class="frente">Quien Somos</span>
+						<span class="atras">Conoce a nuestro profesionales</span>
+					</span>
+				</a></li>
+				<li><a href="Historia.html" class="three-d">
+					<span class="three-d-box">
+						<span class="frente">Nuestra Empresa</span>
+						<span class="atras">Nuestra Historia</span>
+					</span>
+				</a></li>
+				<li><a href="index.html" class="three-d">
+					<span class="three-d-box">
+						<span class="frente">Inicio</span>
+						<span class="atras">Volve a la pagina inicio</span>
+					</span>
+				</a></li>
+				<li><a href="Formulario.html" class="three-d">
+					<span class="three-d-box">
+						<span class="frente">Soport</span>
+						<span class="atras">Darnos Tu Opinion</span>
+					</span>
+				</a></li>
+			</ul>
+		</nav>
+		<nav id="login">
+			<ul>
+				<li><a href="Login.html" title="Log In">Log In</a></li>
+				<li><a href="Registro.html" title="No tienes la cuenta?¿ ¡Registra!">Registra</a></li>
+			</ul>
+		</nav>
+	</header>
+	<ul class="galeria">
+		<li><a href="#img1"><img src="51MfHgeKjAL._SX258_BO1,204,203,200_.jpg"></a></li>
+		<li><a href="#img2"><img src="51PoU+wM0iL._SX395_BO1,204,203,200_.jpg"></a></li>
+		<li><a href="#img3"><img src="descarga1.jpg"></a></li>
+		<li><a href="#img4"><img src="descarga.jpg"></a></li>
+	</ul>
+
+	<div class="modal" id="img1">
+		<h3>CSS</h3>
+		<div class="imagen">
+			<a href="#img4">&#60;</a>
+			<a href="#img2"><img src="51MfHgeKjAL._SX258_BO1,204,203,200_.jpg"></a>
+			<a href="#img2">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+
+	<div class="modal" id="img2">
+		<h3>BBDD</h3>
+		<div class="imagen">
+			<a href="#img1">&#60;</a>
+			<a href="#img3"><img src="51PoU+wM0iL._SX395_BO1,204,203,200_.jpg"></a>
+			<a href="#img3">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+
+	<div class="modal" id="img3">
+		<h3>JS</h3>
+		<div class="imagen">
+			<a href="#img2">&#60;</a>
+			<a href="#img4"><img src="descarga1.jpg"></a>
+			<a href="#img4">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+
+	<div class="modal" id="img4">
+		<h3>JAVA</h3>
+		<div class="imagen">
+			<a href="#img3">&#60;</a>
+			<a href="#img1"><img src="descarga.jpg"></a>
+			<a href="#img1">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	<div class="boton">
+		<input type="button" style="display: block" id="bt" value="Click para más informacion"/>
+		<div id="thediv" style="display:none"><img class="informacion" src="img1.PNG"></div>
+		<input type="button" style="display: block" id="bt1" value="Click para más informacion"/>
+		<div id="thediv1" style="display:none"><img class="informacion" src="img5.PNG"><img class="informacion" src="img2.PNG"></div>
+		<input type="button" style="display: block" id="bt2" value="Click para más informacion"/>
+		<div id="thediv2" style="display:none"><img class="informacion" src="img6.PNG"><img class="informacion" src="img3.PNG"></div>
+		<input type="button" style="display: block" id="bt3" value="Click para más informacion"/>
+		<div id="thediv3" style="display:none"><img class="informacion" src="img7.PNG"><img class="informacion" src="img4.PNG"></div>
+	</div>
+	<footer>
+		<h5>Infolutions S.L. &#169 todos los derechos reservados</h5>
+	</footer>
+</body>
+</html>
